@@ -1,0 +1,22 @@
+name: ml-ops-tuts
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10.6
+  - python-dotenv
+  - autopep8
+  - pylint
+  - boto3
+  - ipykernel
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip
+  - pip:
+      - tqdm
+      - dvc
