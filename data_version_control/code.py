@@ -8,9 +8,11 @@ data = {'Name':['Alice', 'Bob', 'Charlie'],
         'City': ['New York', 'Log Angeles', 'Chicago']}
 
 new_row = {'Name':'Cheryl', 'Age':24, 'City':'Dublin'}
+new_row_2 = {'Name':'Ana', 'Age':27, 'City':'Galway'}
 
 df = pd.DataFrame(data=data)
 df.loc[len(df.index)] = new_row
+df.loc[len(df.index)] = new_row_2
 
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
